@@ -21,7 +21,7 @@ public class Ejercicio4 {
             System.out.println("Escriba numero superior: ");
             valorSuperior = sc.nextInt();
 
-            //validacion de numero inferior
+            //validacion de numero inferior.
             if (valorInferior > valorSuperior) {
                 System.out.println("Incorrecto, debe ingresar un valor mayor al inferior");
 

@@ -35,6 +35,7 @@ public class Ejercicio3 {
                 System.out.println("Incorrecto, por favor reingresar opcion valida\n");
                 opcion = sc.nextInt();
             }
+
             switch (opcion) {
                 case 1 ->//
                     // accion para la opcion 1

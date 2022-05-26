@@ -1,4 +1,4 @@
-package f20220525;
+package com.generation.f20220525;
 
 import java.util.Scanner;
 

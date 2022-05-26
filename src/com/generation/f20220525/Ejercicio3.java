@@ -1,5 +1,4 @@
-package f20220525;
-
+package com.generation.f20220525;
 import java.util.Scanner;
 
 public class Ejercicio3 {
@@ -9,7 +8,7 @@ public class Ejercicio3 {
         System.out.println("Ingrese la opcion (1) para entrar; (0) para salir");
         int opcion = sc.nextInt();//capturando el ingreso por consola
 
-        /**VALIDAR EL INGRESO ERRONEO DE LA OPCION**/
+        /*VALIDAR EL INGRESO ERRONEO DE LA OPCION*/
 
         //while valida que la condicion sea verdadera
 
@@ -37,25 +36,13 @@ public class Ejercicio3 {
                 opcion = sc.nextInt();
             }
             switch (opcion) {
-                case 1://
+                case 1 ->//
                     // accion para la opcion 1
-                    System.out.println("Le corresponde pagar: " + rango1);
-                    break;
-                case 2:
-                    System.out.println("Le corresponde pagar: " + rango2);
-                    break;
-                case 3:
-                    System.out.println("Le corresponde pagar: " + rango3);
-
-                    break;
-                case 4:
-                    System.out.println("Le corresponde pagar: " + rango4);
-
-                    break;
-
-                default:
-                    System.out.println("opcion invalida");
-                    break;
+                        System.out.println("Le corresponde pagar: " + rango1);
+                case 2 -> System.out.println("Le corresponde pagar: " + rango2);
+                case 3 -> System.out.println("Le corresponde pagar: " + rango3);
+                case 4 -> System.out.println("Le corresponde pagar: " + rango4);
+                default -> System.out.println("opcion invalida");
             }
         } else {
             System.out.println("Sesion Finalizada con Exito!\n");

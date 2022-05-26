@@ -1,4 +1,4 @@
-package f20220525;
+package com.generation.f20220525;
 
 import java.util.Scanner;
 
@@ -6,11 +6,7 @@ public class Ejercicio4 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int valorInferior = 0;
-        int totalSuma = 0;
-        int valor = 0;
-        int valorSuperior = 0;
-        int contador = 0;
+        int valorInferior, totalSuma=0, valor=0, valorSuperior, contador;
 
         System.out.println("Escriba numero inferior: ");
         valorInferior = sc.nextInt();

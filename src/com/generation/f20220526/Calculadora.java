@@ -40,16 +40,16 @@ public class Calculadora {
     private static void suma() {//funcion suma() que no retorna nada, solo ejecuta el codigo cuando fue llamado en el switch al digitar la (opcion 1)
         System.out.println("¿Cuántos números deseas sumar?:");
         Scanner scanner = new Scanner(System.in);//scanner
-        int contador = scanner.nextInt();//contador que me va a servir para darle el valor de termino de mi for
-        int numeros[] = new int[contador];
+        int contador = scanner.nextInt();//contador que me va a servir para darle el valor de termino a mi "for" -scanner del contador-
+        int numeros[] = new int[contador];//Se genera un arreglo con la cantidad del contador
 
-        int resultadoSuma = 0;
-        for (int i = 0; i < contador; i++) {//aqui esta el for, se va a terminar el "for"hasta el numero que digito el usuario
+        int resultadoSuma = 0;//variable acumuladora
+        for (int i = 0; i < contador; i++) {//aqui esta el for, se va a terminar el "for"hasta el numero que digito el usuario en el scanner del contador
 
             System.out.println("Ingrese número " + (i + 1) + ": ");//aqui va aparecer "ingrese numero 1 : "en pantalla
             int numero = scanner.nextInt();//Aqui estoy esperando a que digite un numero
             numeros[i] = numero;//lo guardo en un arreglo cada numero que digite
-            resultadoSuma = (resultadoSuma + numeros[i]);//Aqui hay un acumulador que va sumando los numeros del arreglo
+            resultadoSuma = (resultadoSuma + numeros[i]);//Variable acumuladora que va sumando los numeros del arreglo
         }
         System.out.println("El resultado de la suma es: " + resultadoSuma);//Finalmente imprimo el resultado de la suma
     }

@@ -8,7 +8,7 @@ public class Calculadora {
         System.out.println("*******************CALCULADORA********************");
         System.out.println("Ingrese opción: ");
         System.out.println("1 sumar\n2 restar\n3 multiplicar\n4 dividir\n5 resto");
-        int opcion = scanner.nextInt();
+        int opcion = scanner.nextInt();//Aqui estoy esperando la opcion que digite la persona
 
         while (opcion > 5 || opcion < 1) {//Aqui con el while estoy validando que solo ingrese los valores pedidos
             System.out.println("Incorrecto, debes elegir una opcion correcta");

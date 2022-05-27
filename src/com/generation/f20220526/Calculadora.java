@@ -37,7 +37,6 @@ public class Calculadora {
         }
 
     }
-
     private static void suma() {//funcion suma() que no retorna nada, solo ejecuta el codigo cuando fue llamado en el switch al digitar la (opcion 1)
         System.out.println("¿Cuántos números deseas sumar?:");
         Scanner scanner = new Scanner(System.in);//scanner

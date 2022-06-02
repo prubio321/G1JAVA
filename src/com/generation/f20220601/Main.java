@@ -55,7 +55,7 @@ public class Main {
             mascota2.hacerSonido();
         }
 
-        //transformar el objeto generico a uno especifico
+        //transformar el objeto generico a uno especifico.
         Perro perroChocolo = (Perro) chocolo;
         perroChocolo.setCantPaseos(6);
     }

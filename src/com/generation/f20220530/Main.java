@@ -1,5 +1,7 @@
 package com.generation.f20220530;
 
+import com.generation.f20220531.Cliente;
+
 import java.util.ArrayList;//Es una clase como tal, tenemos atributos, metodos y va mas alla de la implementacion.
 import java.util.List;//interfaz que es?//las interfaces solamente definen los metodos, es decir solo la estructura
 
@@ -23,8 +25,12 @@ public class Main {
         }
 
         for (Alumno objetoAlumno : listaAlumnos) {
+
             System.out.println(objetoAlumno.toString());
         }
+
+        Cliente cliente = new Cliente();
+
 
 
         // instancia de una clase

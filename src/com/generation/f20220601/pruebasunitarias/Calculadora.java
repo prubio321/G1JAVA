@@ -25,8 +25,7 @@ public class Calculadora {
 
     }
 
-
-    public String resto(int numero1) {
+    public String resto(int n) {
 
         int numero =3;
 
@@ -45,7 +44,10 @@ public class Calculadora {
 
 
 
-
+// modelar como objetos un usuario(padre), profesor(hijo) y alumno(hijo)
+// alumno debe decir presente con test
+// lista usuario, profesor, alumno y probar test matematicos
+// hasta las 11:45 a.m
 
 
 

@@ -73,13 +73,14 @@ public class Alumno extends Usuario {
                 '}';
     }
 
-    public Boolean presente() {
+    public String presente() {
+        Boolean asistencia = true;
         if (asistencia) {
            String resultado = "Presente";
-            return Boolean.valueOf(resultado);
+            return (resultado);
         }else{
             String resultado = "Ausente";
-            return Boolean.valueOf(resultado);
+            return (resultado);
         }
 
     }

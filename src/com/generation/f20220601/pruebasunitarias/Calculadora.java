@@ -1,6 +1,5 @@
 package com.generation.f20220601.pruebasunitarias;
 
-import java.util.Scanner;
 
 public class Calculadora {
 

@@ -9,17 +9,15 @@ public class Usuario {
     private String password;
     private String email;
     private String sexo;
-    private List<Usuario> listaUsuarios;
 
     public Usuario() {
     }
 
-    public Usuario(String nombre, String password, String email, String sexo, List<Usuario> listaUsuarios) {
+    public Usuario(String nombre, String password, String email, String sexo) {
         this.nombre = nombre;
         this.password = password;
         this.email = email;
         this.sexo = sexo;
-        this.listaUsuarios = listaUsuarios;
     }
 
     public String getNombre() {
@@ -54,11 +52,13 @@ public class Usuario {
         this.sexo = sexo;
     }
 
-    public List<Usuario> getListaUsuarios() {
-        return listaUsuarios;
-    }
-
-    public void setListaUsuarios(List<Usuario> listaUsuarios) {
-        this.listaUsuarios = listaUsuarios;
+    @Override
+    public String toString() {
+        return "Usuario{" +
+                "nombre='" + nombre + '\'' +
+                ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
+                ", sexo='" + sexo + '\'' +
+                '}';
     }
 }

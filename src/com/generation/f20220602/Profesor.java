@@ -2,6 +2,7 @@ package com.generation.f20220602;
 
     public class Profesor extends Usuario {
         private String asignatura;
+        private String Nombre;
 
         private String prueba;
 
@@ -19,10 +20,9 @@ package com.generation.f20220602;
             super();
         }
 
-        public Profesor(String asignatura, String prueba, String direccion, String telefono, String id_escuela,
-                        Integer anioentrada, String curriculum) {
-            super();
+        public Profesor(String asignatura, String nombre, String prueba, String direccion, String telefono, String id_escuela, Integer anioentrada, String curriculum) {
             this.asignatura = asignatura;
+            Nombre = nombre;
             this.prueba = prueba;
             this.direccion = direccion;
             this.telefono = telefono;
@@ -37,6 +37,16 @@ package com.generation.f20220602;
 
         public void setAsignatura(String asignatura) {
             this.asignatura = asignatura;
+        }
+
+        @Override
+        public String getNombre() {
+            return Nombre;
+        }
+
+        @Override
+        public void setNombre(String nombre) {
+            Nombre = nombre;
         }
 
         public String getPrueba() {
@@ -89,8 +99,15 @@ package com.generation.f20220602;
 
         @Override
         public String toString() {
-            return "Profesor [asignatura=" + asignatura + ", prueba=" + prueba + ", direccion=" + direccion
-                    + ", telefono=" + telefono + ", id_escuela=" + id_escuela + ", anioentrada=" + anioentrada
-                    + ", curriculum=" + curriculum + "]";
+            return "Profesor{" +
+                    "asignatura='" + asignatura + '\'' +
+                    ", Nombre='" + Nombre + '\'' +
+                    ", prueba='" + prueba + '\'' +
+                    ", direccion='" + direccion + '\'' +
+                    ", telefono='" + telefono + '\'' +
+                    ", id_escuela='" + id_escuela + '\'' +
+                    ", anioentrada=" + anioentrada +
+                    ", curriculum='" + curriculum + '\'' +
+                    '}';
         }
-}
+    }

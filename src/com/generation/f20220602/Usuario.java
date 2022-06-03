@@ -1,11 +1,8 @@
 package com.generation.f20220602;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Usuario {
 
-    private String nombre;
+    private String nombreUsuario;
     private String password;
     private String email;
     private String sexo;
@@ -13,19 +10,19 @@ public class Usuario {
     public Usuario() {
     }
 
-    public Usuario(String nombre, String password, String email, String sexo) {
-        this.nombre = nombre;
+    public Usuario(String nombreUsuario, String password, String email, String sexo) {
+        this.nombreUsuario = nombreUsuario;
         this.password = password;
         this.email = email;
         this.sexo = sexo;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNombreUsuario() {
+        return nombreUsuario;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombreUsuario(String nombre) {
+        this.nombreUsuario = nombre;
     }
 
     public String getPassword() {
@@ -55,7 +52,7 @@ public class Usuario {
     @Override
     public String toString() {
         return "Usuario{" +
-                "nombre='" + nombre + '\'' +
+                "nombre='" + nombreUsuario + '\'' +
                 ", password='" + password + '\'' +
                 ", email='" + email + '\'' +
                 ", sexo='" + sexo + '\'' +

@@ -10,7 +10,6 @@ public class TrabajoTest {
         Alumno alumno = new Alumno();
         String resultado = alumno.presente();//true
 
-
         assertEquals("Presente", resultado);//cuando esta presente
 
     }

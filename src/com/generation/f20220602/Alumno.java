@@ -20,22 +20,20 @@ public class Alumno extends Usuario {
         this.asignatura = asignatura;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
     public Integer getId_alum() {
         return id_alum;
     }
 
     public void setId_alum(Integer id_alum) {
         this.id_alum = id_alum;
-    }
-
-    @Override
-    public String getNombre() {
-        return nombre;
-    }
-
-    @Override
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
     }
 
     public String getCurso() {
@@ -70,6 +68,12 @@ public class Alumno extends Usuario {
                 ", curso='" + curso + '\'' +
                 ", asistencia=" + asistencia +
                 ", asignatura='" + asignatura + '\'' +
+                '}' + "\n" +
+                "Usuario{" +
+                "nombre='" + super.getNombreUsuario() + '\'' +
+                ", password='" + super.getPassword() + '\'' +
+                ", email='" + super.getEmail() + '\'' +
+                ", sexo='" + super.getSexo() + '\'' +
                 '}';
     }
 
